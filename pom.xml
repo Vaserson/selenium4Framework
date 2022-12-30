@@ -27,8 +27,15 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.7.1</version>
-            <scope>test</scope> <!-- visible only for src.test path -->
+            <scope>compile</scope> <!-- visible only for src.test path -->
             <!-- <scope>compile</scope> visible for src.main path also -->
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.3.1</version>
         </dependency>
     </dependencies>
 
