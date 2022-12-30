@@ -3,6 +3,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.time.Duration;
+
 public class BaseTest {
     protected static WebDriver driver;
 
@@ -22,6 +24,7 @@ public class BaseTest {
                 throw new IllegalStateException("Invalid browser name: " + browser);
         }
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         return driver;
     }
 
